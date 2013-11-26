@@ -9,8 +9,7 @@ Also, cutlass.vim modifies the registers `"1` through `"9` (the *history registe
 
 ## Introducing cut and delete operators
 
-Cutlass.vim introduces a new operator command called *cut*, which is mapped to the `x` key.
-The cut `x{motion}` operator behaves much like Vim's built-in `d{motion}` command: it removes text from the document and writes it to a register. The `X` key is equivalent to `x$`, just as Vim's built-in `D` command is equivalent to `d$`.
+Cutlass.vim introduces a new operator command called *cut*, which is mapped to the `x` key. The cut `x{motion}` operator behaves much like Vim's built-in `d{motion}` command: it removes text from the document and writes it to a register. Pressing `xx` would cut an entire line. The `X` key is equivalent to `x$`, just as Vim's built-in `D` command is equivalent to `d$`.
 
 This means that we lose two of Vim's built-in commands: `x` and `X`, but we can reproduce their functionality using `xl` and `xh` to cut a character under or behind the cursor, respectively.
 
@@ -20,7 +19,7 @@ From here on, I'll use *the delete operations* as a shorthand to refer to the `d
 
 ## Redefining Vim's registers
 
-The `x{motion}` and `y{motion}` (cut and copy) operations always write text to the default register `""` and register `"1`.
+The cut and yank operations (`x{motion}` and `y{motion}`) always write text to the default register `""` and register `"1`.
 When text is written to register `"1`, Vim shifts the previous contents of register `"1` into register `"2`, `"2` into `"3`, and so forth, losing the previous contents of register `"9`.
 As a result, registers `"1` through `"9` represent a clipboard history of cut and yank operations.
 In cutlass.vim, registers `"1` - `"9` may be referred to collectivly as *the history registers*.
