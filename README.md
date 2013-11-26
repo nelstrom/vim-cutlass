@@ -37,7 +37,7 @@ This table summarizes the behaviour of Vim's registers as defined by cutlass.vim
 
 <table>
   <tr>
-    <th>operation</th>
+    <th>operations</th>
     <th><code>""</code> (default)</th>
     <th><code>"1</code> (history)</th>
     <th><code>"a</code> (named)</th>
@@ -45,14 +45,28 @@ This table summarizes the behaviour of Vim's registers as defined by cutlass.vim
   </tr>
 
   <tr>
-    <td><code>y{motion}</code></td>
+    <td>
+      <code>y{motion}</code><br/>
+      <code>yy</code><br/>
+      <code>Y</code><br/>
+      <code>x{motion}</code><br/>
+      <code>xx</code><br/>
+      <code>X</code><br/>
+    </td>
     <td>X</td>
     <td>X</td>
     <td>-</td>
     <td>-</td>
   </tr>
   <tr>
-    <td><code>"ay{motion}</code></td>
+    <td>
+      <code>"ay{motion}</code><br/>
+      <code>"ayy</code><br/>
+      <code>"aY</code><br/>
+      <code>"ax{motion}</code><br/>
+      <code>"axx</code><br/>
+      <code>"aX</code><br/>
+    </td>
     <td>X</td>
     <td>X</td>
     <td>X</td>
@@ -60,29 +74,32 @@ This table summarizes the behaviour of Vim's registers as defined by cutlass.vim
   </tr>
 
   <tr>
-    <td><code>x{motion}</code></td>
-    <td>X</td>
-    <td>X</td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td><code>"ax{motion}</code></td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>-</td>
-  </tr>
-
-  <tr>
-    <td><code>d{motion}</code></td>
+    <td>
+      <code>d{motion}</code><br/>
+      <code>dd</code><br/>
+      <code>D</code><br/>
+      <code>c{motion}</code><br/>
+      <code>cc</code><br/>
+      <code>C</code><br/>
+      <code>s</code><br/>
+      <code>S</code><br/>
+    </td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
     <td>X</td>
   </tr>
   <tr>
-    <td><code>"ad{motion}</code></td>
+    <td>
+      <code>"ad{motion}</code><br/>
+      <code>"add</code><br/>
+      <code>"aD</code><br/>
+      <code>"ac{motion}</code><br/>
+      <code>"acc</code><br/>
+      <code>"aC</code><br/>
+      <code>"as</code><br/>
+      <code>"aS</code><br/>
+    </td>
     <td>X</td>
     <td>X</td>
     <td>X</td>
