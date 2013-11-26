@@ -169,9 +169,12 @@ What do you think: Should I build this? Would you use it?
 
 Email your thoughts to [drew@vimcasts.org](mailto:drew@vimcasts.org).
 
+The [easyclip][] plugin by Steve Vermeulen includes similar ideas, but it's an actual working plugin that you can install and use today. Check it out!
+
 [goodbadugly]: http://vimcasts.org/blog/2013/11/25/registers-the-good-the-bad-and-the-ugly-parts
 [bad]: http://vimcasts.org/blog/2013/11/25/registers-the-good-the-bad-and-the-ugly-parts#the-bad-parts
 [v_p]: http://vimdoc.sourceforge.net/htmldoc/change.html#v_p
+[easyclip]: https://github.com/svermeulen/vim-easyclip
 
 ----------------------------------------
 
